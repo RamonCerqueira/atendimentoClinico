@@ -1,0 +1,12 @@
+{
+  "name": "Cuida Amor · Atendimento Clínico",
+  "short_name": "Cuida Amor Clínico",
+  "description": "Agenda de visitas e evolução clínica Cuida Amor",
+  "lang": "pt-BR",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f6f7f8",
+  "theme_color": "#a84f66",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}

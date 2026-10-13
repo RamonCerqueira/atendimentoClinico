@@ -1,0 +1,18 @@
+generator client {
+  provider      = "prisma-client-js"
+  output        = "../src/generated/client"
+  binaryTargets = ["native"]
+}
+
+datasource db {
+  provider = "sqlserver"
+  url      = env("DATABASE_URL")
+}
+
+// The clinical service uses parameterized SQL against the shared legacy schema.
+// This model gives Prisma a small, local client without copying SoftCare's full schema.
+model Senha {
+  CodUsu Int @id(map: "PK_Senha")
+
+  @@map("Senha")
+}
